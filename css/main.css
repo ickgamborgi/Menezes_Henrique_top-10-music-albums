@@ -1,0 +1,76 @@
+/* reset some values to 0 */
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
+  margin: 0; 
+  padding: 0; 
+} 
+
+img { 
+border: none; 
+margin: 0; 
+padding: 0; 
+}
+
+/*html selectors*/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+/*hide elements from browser but show for doc outline*/
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 25px;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 75px);
+    grid-column-gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#mainHeader {
+  grid-column: 1/-1;
+  display: flex;
+  gap: 15px;
+  animation: album-slider 10s infinite linear;
+}
+
+@keyframes album-slider {
+
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(-300%);
+  }
+
+  
+}
+
+
+#mainContent {
+  grid-column: 1/9;
+  margin-top: 40px;
+}
+
+#contentContainer img {
+  grid-column: 10/-1;
+}
+
+.album-cover {
+  display: block;
+  width: 250px;
+  margin-top: 50px;
+  margin-bottom:50px;
+  opacity: 75%;
+}
