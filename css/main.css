@@ -2,7 +2,7 @@
 div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
   margin: 0; 
   padding: 0; 
-} 
+}
 
 img { 
 border: none; 
@@ -11,10 +11,15 @@ padding: 0;
 }
 
 /*html selectors*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #000;
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -22,6 +27,7 @@ body {
   display: none;
 }
 
+/* general sections */
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -37,40 +43,344 @@ body {
     padding-right: 40px;
 }
 
-#mainHeader {
-  grid-column: 1/-1;
-  display: flex;
-  gap: 15px;
-  animation: album-slider 10s infinite linear;
+main {
+    background-color: rgba(0,0,0,0.9);
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-@keyframes album-slider {
+/* sidebar */
 
-  0% {
-    transform: translateX(-50%);
-  }
+#contentContainer nav {
+  grid-column: 10/-1;
+  border: 1px white outset;
+  border-radius: 15px;
+  padding: 30px 25px 30px 25px;
+  height: 570px;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: 480px;
+  top: 25px;
+  margin-bottom: 85px;
+}
 
-  100% {
-    transform: translateX(-300%);
-  }
+#sideBar li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 0px;
+}
 
+/* Top Header */
+#mainHeader {
+  grid-column: 1/-1;
+}
+
+#top-header {
+  display: flex;
+  margin: 25px 50px 25px 50px; /* top right bottom left  */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-brand {
+  width: 125px;
+}
+
+.github img {
+  padding-right: 10px;
+  margin-bottom: -8px;
+  width: 30px;
+}
+
+.behance img {
+  padding-right: 10px;
+  margin-bottom: -8px;
+  width: 30px;
+}
+
+.github {
+  color: white;
+  padding: 15px 20px 15px 10px;
+  border-radius: 15px;
+  border: 0px;
+  font-size: 16px;
+  margin-left: 15px;
+  text-decoration: none;
+  align-self: end;
+}
+
+.github:hover {
+  color: rgb(255, 255, 192);
+}
+
+.behance {
+  color: white;
+  padding: 15px 20px 15px 10px;
+  border-radius: 15px;
+  border: 0px;
+  font-size: 16px;
+  margin-left: 15px;
+  text-decoration: none;
+  align-self: end;
+}
+
+.behance:hover {
+  color: rgb(255, 255, 192);
+}
+
+#social-links {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  animation: 10s album-slider ease-in-out infinite alternate;
+}
+
+.slider:hover {
+  animation-play-state: paused;
+}
+
+.slider img {
+  width: 250px;
+  opacity: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px rgba(255, 255, 255, 0.25) inset;
+}
+
+.slider img:hover {
+  opacity: 100%;
+}
+
+/* Footer */
+
+#footer {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 75px 0 25px 0;
+    gap: 25px;
+    text-align: center;
+}
+
+#footer-alt-text {
+  width: 450px;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 50%;
+}
+/* Styles */
+
+hr {
+  opacity: 25%;
+  margin-top: 50px;
+  margin-bottom:50px;
+}
+
+#mainContent {
+  grid-column: 1/10;
+  margin-top: 25px;
   
 }
 
-
-#mainContent {
-  grid-column: 1/9;
-  margin-top: 40px;
+#contentContainer {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position:cover ;
 }
 
-#contentContainer img {
-  grid-column: 10/-1;
+.mainTitle {
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
-.album-cover {
-  display: block;
-  width: 250px;
+.mainTitle span {
+  font-size: 64px;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+#picksTitle {
   margin-top: 50px;
-  margin-bottom:50px;
-  opacity: 75%;
+  margin-left: 20px;
+}
+
+#introduction {
+  border-radius: 15px;
+}
+
+.albumContainer {
+  display: flex;
+  margin-top: 100px;
+  padding-top: 15px;
+}
+
+.albumHero {
+  width: 450px;
+  padding-top: 15px;
+}
+
+.ranking {
+  background-color: rgb(255, 255, 192, 0.85);
+  color: black;
+  border-radius: 15px;
+  padding: 15px;
+  min-width: 20px;
+  height: 25px;
+  margin-right: 25px;
+  text-align: center;
+  box-shadow:rgba(255, 255, 255, 0.3) 0px 0px 6px 8px inset;
+}
+
+.lpInfo {
+  width: 440px;
+  height: 440px;
+  animation: float 3500ms infinite ease-in-out;
+  opacity: 85%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 5px;
+}
+
+#introduction > p {
+  font-size: 14px;
+  line-height: 130%;
+}
+
+#vynilWall > img {
+  width: 107px;
+  animation: playing-record 5s infinite ease-in-out;
+  margin: 25px 0px 25px 0px;
+}
+
+.textContent {
+  margin-left: 25px;
+}
+
+.albumTitle {
+  font-size: 32px;
+  padding-right: 15px;
+}
+
+.albumTop10 {
+  margin-bottom: 75px;
+}
+
+.albumDate {
+  font-size: 22px;
+  margin-top: 15px;
+  font-weight: 200;
+  opacity: 50%;
+}
+
+.albumArtist {
+  font-size: 22px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 15px 15px 0;
+  color: black;
+  padding: 15px 20px 15px 15px;
+  width: fit-content;
+}
+
+.albumArtist::before {
+  content: "👤";
+  margin-right: 10px;
+}
+
+.albumArtist:hover {
+  background-color: white;
+}
+
+ul li {
+  font-size: 14px;
+  list-style: none;
+  margin-left: -40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px rgba(255, 255, 255, 0.5) outset;
+}
+
+ul li:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 0 15px 15px 0;
+}
+
+.listenButton {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: -15px;
+  border-radius: 15px;
+}
+
+#1 {
+  margin-bottom: 75px;
+}
+
+.listenButton > a > img {
+  margin-right: 5px;
+  width: 20px;
+}
+
+.youtube, .spotify {
+  color: black;
+  background-color: white;
+  padding: 15px 20px 15px 10px;
+  border-radius: 15px;
+  border: 0px;
+  font-size: 15px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.spotify:hover {
+  background-color: #1ED760;
+}
+
+.youtube:hover {
+  background-color: #CD201F;
+}
+
+/* Animations */
+@keyframes album-slider {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(-80%)
+  }
+}
+
+@keyframes playing-record {
+  0% {
+		transform: rotate(360deg);
+  }
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-2%)
+  }
+
+  50% {
+    transform: translateY(-5%)
+  }
+
+  100% {
+    transform: translateY(-2%)
+  }
 }

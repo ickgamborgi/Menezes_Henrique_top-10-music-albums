@@ -4,27 +4,45 @@
 <!-- Head -->
 <head>
   <meta charset="UTF-8">
-  <title>My Top 10 Music Albums</title>  
+  <title>My LPs Hall of Fame</title>  
   <link rel="stylesheet" href="css/main.css">  
 </head>
 
 <!-- Body -->
 <body>
   <div class="container">
-    <h1 class="hidden">My Top 10 Music Albums</h1>
+    <h1 class="hidden">My LPs Hall of Fame</h1>
     
     <!-- Header -->
     <header id="mainHeader">
-        <img src="./images/Album_woodstock.png" class="album-cover" alt="Album Cover Woodstock">
-        <img src="./images/Album_di-melo.png" class="album-cover" alt="Album Cover Di Melo">
-        <img src="./images/Album_goodbye-yellow-brick-road.png" class="album-cover" alt="Album Cover Goodbye Yellow Brick Road">
-        <img src="./images/Album_sobrevivendo-no-inferno.png" class="album-cover" alt="Album Cover Sobrevivendo no Inferno">
-        <img src="./images/Album-the-freewheelin-bob-dylan.png" class="album-cover" alt="Album Cover The Freewheelin Bob dylan">
-        <img src="./images/Album-brothers-in-arms.png" class="album-cover" alt="Album Cover Brothers in Arms">
-        <img src="./images/Album-abaixo-de-zero.png" class="album-cover" alt="Album Cover Abaixo de Zero">
-        <img src="./images/Album-the-wall.png" class="album-cover" alt="Album Cover The Wall">
-        <img src="./images/Album-amarelo.png" class="album-cover" alt="Album Cover AmarElo">
-        <img src="./images/Album-the-final-cut.png" class="album-cover" alt="Album The Final Cut">
+      
+      <!-- Top Header -->
+      <section id="top-header">
+        <h2 class="hidden">Top Header</h2>
+        <img class="project-brand" src="./images/project-brand.svg" alt="Project Brand">
+        <div id="social-links">
+          <a class="github" href="https://github.com/ickgamborgi" target="_blank">
+            <img src="./images/github-logo.svg" alt="GitHub Logo">My GitHub
+            </a>
+            <a class="behance" href="https://behance.com/ickgamborgi" target="_blank">
+              <img src="./images/behance-logo.svg" alt="Behance Logo">My Behance
+            </a>
+        </div>
+      </section>
+
+      <!-- Slider -->
+      <section class="slider">
+        <h2 class="hidden">Slider</h2>
+        <img src="./images/dire-straits.png" class="album-cover" alt="Slider Image">
+        <img src="./images/di-melo.png" class="album-cover" alt="Slider Image">
+        <img src="./images/pink-floyd.png" class="album-cover" alt="Slider Image">
+        <img src="./images/black-alien.png" class="album-cover" alt="Slider Image">
+        <img src="./images/bob-dylan.png" class="album-cover" alt="Slider Image">
+        <img src="./images/elton-john.png" class="album-cover" alt="Slider Image">
+        <img src="./images/emicida.png" class="album-cover" alt="Slider Image">
+        <img src="./images/racionais-mcs.png" class="album-cover" alt="Slider Image">
+        <img src="./images/rolling-stones.png" class="album-cover" alt="Slider Image">
+      </section>
     </header>
    
     <!-- Main -->
@@ -32,80 +50,410 @@
 
       <!-- Main Content -->
       <section id="mainContent">
-      <h2 class="mainTitle">Welcome to my LP Haven</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptatibus sapiente tenetur magnam consequuntur perspiciatis, dicta, harum, accusantium similique eius eos molestiae voluptatem eligendi nihil laboriosam corporis sint? Soluta, quia!</p>
-        
+        <div id="introduction">
+          <div id="vynilWall">
+            <img class="spinningVynil" src="./images/vynil-green.png" alt="Vynil LP">
+            <img class="spinningVynil" src="./images/vynil-blue.png" alt="Vynil LP">
+            <img class="spinningVynil" src="./images/vynil_yellow.png" alt="Vynil LP">
+          </div>
+          <h2 class="mainTitle"><span>Welcome</span> to my LPs Hall of Fame...</h2>
+          <p>Join me on a journey through musical history as we celebrate the enduring brilliance of these iconic albums and artists. Each of these records holds a very special place in my heart, bringing back memories, moments, thoughts and feelings. I reunited the LP records that bring back some of the best moments in my life! Now step into my personal Top 10, with a handpicked collection of my favorite albums, artists and classical tracks!</p> 
+          <br>
+          <p>Well, let's get started then...</p>
+        </div>
+        <hr>
         <!-- Albums Section -->
-        <section>
-        <h2 class="hidden">Top 10</h2>
+        <section class="albumTop10">
+          <h2 class="hidden" id="picksTitle">My Top Picks</h2>
 
           <!-- Album 10 -->
-          <section class="albumContainer">
-            <img src="https://via.placeholder.com/100x100" class="lpInfo" alt="LP 10">
-            <h2 class="hidden">10th Ranked</h2>
-            <div>
-              <h3 class="albumTitle">Album Name</h3>
-              <h4 class="albumArtist">by Artist</h4>
-              <h4 class="albumDate">2024</h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellat quas eos officiis iste quasi non voluptatibus aliquid odit, alias accusantium doloremque corrupti deserunt iusto ab nisi ut necessitatibus at sed molestiae? Deleniti dicta amet enim necessitatibus, inventore sequi aliquam, reprehenderit tempora minus aliquid illo perspiciatis. Eos nisi assumenda hic!</p>
+          <section class="albumContainer" id="10">
+            <h3 class="ranking">10</h3>
+            <div class="albumHero">
+              <img src="./images/Album_woodstock.png" class="lpInfo" alt="LP 10">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_nQM07GLuR4zU9cD0QnQDMhJRU3syMLz48&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/2mCNJ90uPdrORywFGSxQfX?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
+              </div>
+            </div>
+            <div class="textContent">
+              <h4 class="albumTitle">Woodstock</h4>
+              <h5 class="albumDate">2017</h5>
+              <h5 class="albumArtist">Portugal. The Man</h5>
               <ul class="albumTracks">
-                <h5 class="track">Song Name 1</h5>
-                <h5 class="track">Song Name 2</h5>
-                <h5 class="track">Song Name 3</h5>
-                <h5 class="track">Song Name 4</h5>
-                <h5 class="track">Song Name 5</h5>
+                <li class="track">Number One</li>
+                <li class="track">Easy Tiger</li>
+                <li class="track">Live In The Moment</li>
+                <li class="track">Feel It Still</li>
+                <li class="track">Rich Friends</li>
+                <li class="track">Keep On</li>
+                <li class="track">So Young</li>
+                <li class="track">Mr. Lonely</li>
+                <li class="track">Tidal Wave</li>
+                <li class="track">Noise Pollution</li>
               </ul>
-              <div>
-                <h4 class="hidden">Listen on Spotify</h4>
-                <img src="https://via.placeholder.com/25x25" class="spotify" alt="Spotify Logo">
-                <a href="https://spotify.com">Listen on Spotify</a>
+            </div>
+          </section> 
+
+          <!-- Album 9 -->
+          <section class="albumContainer" id="9">
+            <h3 class="ranking">9</h3>
+            <div class="albumHero">
+              <img src="./images/Album_di-melo.png" class="lpInfo" alt="LP 9">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_lvcoanJAP7CcOUqleA0XrMq_zhj5j8b1w&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/2Uri1KkpSo6YOnjLC4ly7F?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
               </div>
-              <div>
-                <h4 class="hidden">Listen on YouTube</h4>
-                <img src="https://via.placeholder.com/25x25" class="youtube" alt="Youtube Logo">
-                <a href="https://youtube.com">Listen on Youtube</a>
-              </div>
+            </div>
+            <div class="textContent">
+              <h4 class="albumTitle">Di Melo</h4>
+              <h5 class="albumDate">1975</h5>
+              <h5 class="albumArtist">Di Melo</h5>
+              <ul class="albumTracks">
+                <li class="track">Kilario</li>
+                <li class="track">A Vida Em Seus Métodos Diz Calma</li>
+                <li class="track">Aceito Tudo</li>
+                <li class="track">Conformopolis</li>
+                <li class="track">Ma-Lida</li>
+                <li class="track">Sementes</li>
+                <li class="track">Pernalonga</li>
+                <li class="track">Minha Estrela</li>
+                <li class="track">Se O Mundo Acabasse Em Mel</li>
+                <li class="track">Alma Gemea</li>
+                <li class="track">João</li>
+                <li class="track">Indecisão</li>
+              </ul>
             </div>
           </section>
 
-          <!-- Album 9 -->
-          <section class="albumContainer">
-            <img src="https://via.placeholder.com/100x100" class="lpInfo" alt="LP 9">
-            <h2 class="hidden">9th Ranked</h2>
-            <div>
-              <h3 class="albumTitle">Album Name</h3>
-              <h4 class="albumArtist">by Artist</h4>
-              <h4 class="albumDate">2024</h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellat quas eos officiis iste quasi non voluptatibus aliquid odit, alias accusantium doloremque corrupti deserunt iusto ab nisi ut necessitatibus at sed molestiae? Deleniti dicta amet enim necessitatibus, inventore sequi aliquam, reprehenderit tempora minus aliquid illo perspiciatis. Eos nisi assumenda hic!</p>
-              <ul class="albumTracks">
-                <h5 class="track">Song Name 1</h5>
-                <h5 class="track">Song Name 2</h5>
-                <h5 class="track">Song Name 3</h5>
-                <h5 class="track">Song Name 4</h5>
-                <h5 class="track">Song Name 5</h5>
-              </ul>
-              <div>
-                <h4 class="hidden">Listen on Spotify</h4>
-                <img src="https://via.placeholder.com/25x25" class="spotify" alt="Spotify Logo">
-                <a href="https://spotify.com">Listen on Spotify</a>
-              </div>
-              <div>
-                <h4 class="hidden">Listen on YouTube</h4>
-                <img src="https://via.placeholder.com/25x25" class="youtube" alt="Youtube Logo">
-                <a href="https://youtube.com">Listen on Youtube</a>
+          <!-- Album 8 -->
+          <section class="albumContainer" id="8">
+            <h3 class="ranking">8</h3>
+            <div class="albumHero">
+              <img src="./images/Album_goodbye-yellow-brick-road.png" class="lpInfo" alt="LP 8">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_mfrVeP01Fp1Cpa__JtGwqoxYeBfqz_c6E&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/5WupqgR68HfuHt3BMJtgun?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
               </div>
             </div>
+            <div class="textContent">
+              <h4 class="albumTitle">Goodbye Yellow Brick Road</h4>
+              <h5 class="albumDate">1973</h5>
+              <h5 class="albumArtist">Elton John</h5>
+              <ul class="albumTracks">
+                <li class="track">Funeral For A Friend</li>
+                <li class="track">Candle In The Wind</li>
+                <li class="track">Bennie And The Jets</li>
+                <li class="track">Goodbye Yellow Brick Road</li>
+                <li class="track">This Song Has No Title</li>
+                <li class="track">Grey Seal</li>
+                <li class="track">Jamaica Jerk-Off</li>
+                <li class="track">I've Seen That Movie Too</li>
+                <li class="track">Sweet Painted Lady</li>
+                <li class="track">The Ballad Of Danny Bailey</li>
+                <li class="track">Dirty Little Girl</li>
+                <li class="track">All The Girls Love Alice</li>
+                <li class="track">Your Sister Can't Twist</li>
+                <li class="track">Saturday Night's Alright</li>
+                <li class="track">Roy Rogers</li>
+                <li class="track">Social Disease</li>
+                <li class="track">Harmony</li>
+              </ul>
+            </div>
           </section>
-          
+
+          <!-- Album 7 -->
+          <section class="albumContainer" id="7">
+            <h3 class="ranking">7</h3>
+            <div class="albumHero">
+              <img src="./images/Album_sobrevivendo-no-inferno.png" class="lpInfo" alt="LP 7">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_nXyWjwypr-yMtSmeWyapr9gsaecYZe7rQ&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/1UzrzuOmZfBgXyS3pgKD10?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
+              </div>
+            </div>
+            <div class="textContent">
+              <h4 class="albumTitle">Sobrevivendo No Inferno: Surviving In Hell</h4>
+              <h5 class="albumDate">1997</h5>
+              <h5 class="albumArtist">Racionais MC's</h5>
+              <ul class="albumTracks">
+                <li class="track">Jorge Da Capadócia</li>
+                <li class="track">Genesis</li>
+                <li class="track">Capítulo 4, Versículo 3</li>
+                <li class="track">Tô Ouvindo Alguém Me Chamar</li>
+                <li class="track">Rapaz Comum</li>
+                <li class="track">...</li>
+                <li class="track">Diário de Um Detento</li>
+                <li class="track">Periferia É Periferia</li>
+                <li class="track">Qual Mentira Vou Acreditar</li>
+                <li class="track">Mágico de Oz</li>
+                <li class="track">Formula Mágica da Paz</li>
+                <li class="track">Salve</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Album 6 -->
+          <section class="albumContainer" id="6">
+            <h3 class="ranking">6</h3>
+            <div class="albumHero">
+              <img src="./images/Album-the-freewheelin-bob-dylan.png" class="lpInfo" alt="LP 6">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_nbrxY1_go_X2IYU44cQQVKPIyhAj7oDI0&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/0o1uFxZ1VTviqvNaYkTJek?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
+              </div>
+            </div>
+            <div class="textContent">
+              <h4 class="albumTitle">The Freewheelin' Bob Dylan</h4>
+              <h5 class="albumDate">1963</h5>
+              <h5 class="albumArtist">Bob Dylan</h5>
+              <ul class="albumTracks">
+                <li class="track">Blowin' In The Wind</li>
+                <li class="track">Girl From The North Country</li>
+                <li class="track">Masters Of War</li>
+                <li class="track">Down The Highway</li>
+                <li class="track">Bob Dylan's Blues</li>
+                <li class="track">A Hard Rain's A-Gonna Fall</li>
+                <li class="track">Don't Think Twice, It's All Right</li>
+                <li class="track">Bob Dylan's Dream</li>
+                <li class="track">Oxford Town</li>
+                <li class="track">Talkin' World War III Blues</li>
+                <li class="track">Corrina, Corrina</li>
+                <li class="track">Honey, Just Allow Me One More Chance</li>
+                <li class="track">I Shall Be Free</li>
+                
+              </ul>
+            </div>
+          </section>
+
+          <!-- Album 5 -->
+          <section class="albumContainer" id="5">
+            <h3 class="ranking">5</h3>
+            <div class="albumHero">
+              <img src="./images/Album-brothers-in-arms.png" class="lpInfo" alt="LP 5">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_lII764l-1lvcrPSGMaEA2hEbUE8oe9iSI&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/7jvcSnCnugLcisBCNBm60s?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
+              </div>
+            </div>
+            <div class="textContent">
+              <h4 class="albumTitle">Brothers In Arms</h4>
+              <h5 class="albumDate">1985</h5>
+              <h5 class="albumArtist">Dire Straits</h5>
+              <ul class="albumTracks">
+                <li class="track">So Far Away</li>
+                <li class="track">Money For Nothing</li>
+                <li class="track">Walk Of Life</li>
+                <li class="track">Your Latest Trick</li>
+                <li class="track">Why Worry</li>
+                <li class="track">Ride Across the River</li>
+                <li class="track">The Man's Too Strong</li>
+                <li class="track">One World</li>
+                <li class="track">Brothers In Arms</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Album 4 -->
+          <section class="albumContainer" id="4">
+            <h3 class="ranking">4</h3>
+            <div class="albumHero">
+              <img src="./images/Album-abaixo-de-zero.png" class="lpInfo" alt="LP 4">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_k-NRle48dcIiIX0QbhexgdzCz1V9YOp9w&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/0d9km1VogLi6sN6S95ilyT?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
+              </div>
+            </div>
+            <div class="textContent">
+              <h4 class="albumTitle">Abaixo De Zero: Hello Hell</h4>
+              <h5 class="albumDate">2019</h5>
+              <h5 class="albumArtist">Black Alien</h5>
+              <ul class="albumTracks">
+                <li class="track">Área 51</li>
+                <li class="track">Carta Pra Amy</li>
+                <li class="track">Vai Baby</li>
+                <li class="track">Que Nem O Meu Cachorro</li>
+                <li class="track">Take Ten</li>
+                <li class="track">Au Revoir</li>
+                <li class="track">Aniversário De Sobriedade</li>
+                <li class="track">Jamais Serão</li>
+                <li class="track">Capítulo Zero</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Album 3 -->
+          <section class="albumContainer" id="3">
+            <h3 class="ranking">3</h3>
+            <div class="albumHero">
+              <img src="./images/Album-the-wall.png" class="lpInfo" alt="LP 3">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_nE3dmeYl_9Jgv2CT0aqufkDcyB6BBMcGM&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/5Dbax7G8SWrP9xyzkOvy2F?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
+              </div>
+            </div>
+            <div class="textContent">
+              <h4 class="albumTitle">The Wall</h4>
+              <h5 class="albumDate">1979</h5>
+              <h5 class="albumArtist">Pink Floyd</h5>
+              <ul class="albumTracks">
+                <li class="track">In The Flesh?</li>
+                <li class="track">The Thin Ice</li>
+                <li class="track">Another Brick In The Wall, Pt. 1</li>
+                <li class="track">The Happiest Days Of Our Lives</li>
+                <li class="track">Another Brick In The Wall, Pt. 2</li>
+                <li class="track">Mother</li>
+                <li class="track">Goodbye Blue Sky</li>
+                <li class="track">Empty Spaces</li>
+                <li class="track">Young Lust</li>
+                <li class="track">One Of My Turns</li>
+                <li class="track">Don't Leave Me Now</li>
+                <li class="track">Another Brick In The Wall, Pt. 3</li>
+                <li class="track">Goodbye Cruel World</li>
+                <li class="track">Hey You</li>
+                <li class="track">Is There Anybody Out There?</li>
+                <li class="track">Nobody Home</li>
+                <li class="track">Vera</li>
+                <li class="track">Bring The Boys Back Home</li>
+                <li class="track">Comfortably Numb</li>
+                <li class="track">The Show Must Go On</li>
+                <li class="track">In The Flesh</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Album 2 -->
+          <section class="albumContainer" id="2">
+            <h3 class="ranking">2</h3>
+            <div class="albumHero">
+              <img src="./images/Album-amarelo.png" class="lpInfo" alt="LP 2">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_n952FcmuRRQ9afA2YMOx9OKZ3m7tunI_g&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/22ltKhPdKZ4IuFrna73xPG?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
+              </div>
+            </div>
+            <div class="textContent">
+              <h4 class="albumTitle">AmarElo</h4>
+              <h5 class="albumDate">2019</h5>
+              <h5 class="albumArtist">Emicida</h5>
+              <ul class="albumTracks">
+                <li class="track">Principia</li>
+                <li class="track">A Ordem Natural Das Coisas</li>
+                <li class="track">Pequenas Alegrias Da Vida Adulta</li>
+                <li class="track">Quem Tem Um Amigo (Tem Tudo)</li>
+                <li class="track">Paisagem</li>
+                <li class="track">Cananéia, Iguape e Ilha Comprida</li>
+                <li class="track">9nha</li>
+                <li class="track">Ismália</li>
+                <li class="track">Eminência Parda</li>
+                <li class="track">AmarElo</li>
+                <li class="track">Libre</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Album 1 -->
+          <section class="albumContainer" id="1">
+            <h3 class="ranking">1</h3>
+            <div class="albumHero">
+              <img src="./images/Album-the-final-cut.png" class="lpInfo" alt="LP 1">
+              <div class="listenButton">
+                <a class="youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_lulVQWuZ__9BNccS5Bqsa2OmbA0u3B-8M&feature=gws_kp_album&feature=gws_kp_artist" target="_blank">
+                  <img style="color:white" src="./images/youtube-logo.svg" alt="Youtube Logo">Listen on Youtube
+                </a>
+                <a class="spotify" href="https://open.spotify.com/album/1yMenUMOx7BpfTDuVQs99y?autoplay=true" target="_blank">
+                  <img style="color:white" src="./images/spotify-logo.svg" alt="Spotify Logo">Listen on Spotify
+                </a>
+              </div>
+            </div>
+            <div class="textContent">
+              <h4 class="albumTitle">The Final Cut</h4>
+              <h5 class="albumDate">1983</h5>
+              <h5 class="albumArtist">Pink Floyd</h5>
+              <ul class="albumTracks">
+                <li class="track">The Post War Dream</li>
+                <li class="track">Your Possible Pasts</li>
+                <li class="track">One Of The Few</li>
+                <li class="track">When The Tigers Broke Free</li>
+                <li class="track">The Hero's Return</li>
+                <li class="track">The Gunner's Dream</li>
+                <li class="track">Paranoid Eyes</li>
+                <li class="track">Get Your Filthy Hands Off My Desert</li>
+                <li class="track">The Fletcher Memorial Home</li>
+                <li class="track">Southampton Dock</li>
+                <li class="track">The Final Cut</li>
+                <li class="track">Not Now John</li>
+                <li class="track">Two Suns In The Sunset</li>
+              </ul>
+            </div>
+          </section>
+
         </section>
 
       </section>
 
       <!-- Sidebar -->
-      <h2 class="hidden">Sidebar Index</h2>
-      <img src="https://via.placeholder.com/265x265" alt="index">
-      
-    </main>
+      <nav id="sideBar">
+        <h2 class="hidden">Sidebar Navigation</h2>
+        <ul>
+          <li><a href="#mainContent">Introduction</a></li>
+          <li><a href="#10"><span>10.</span> Portugal. The Man</a></li>
+          <li><a href="#9"><span>9.</span> Di Melo</a></li>
+          <li><a href="#8"><span>8.</span> Elton John</a></li>
+          <li><a href="#7"><span>7.</span> Racionais MC's</a></li>
+          <li><a href="#6"><span>6.</span> Bob Dylan</a></li>
+          <li><a href="#5"><span>5.</span> Dire Straits</a></li>
+          <li><a href="#4"><span>4.</span> Black Alien</a></li>
+          <li><a href="#3"><span>3.</span> Pink Floyd</a></li>
+          <li><a href="#2"><span>2.</span> Emicida</a></li>
+          <li><a href="#1"><span>1.</span> Pink Floyd</a></li>
+        </ul>
+      </nav>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <h2 class="hidden">Footer</h2>
+        <img class="project-brand" src="./images/project-brand.svg" alt="Project Brand">
+        <h3 id="footer-main-text">&copy; Henrique Gamborgi Menezes</h3>
+        <h2 id="footer-alt-text"> This page was designed and developed for the Homework 5 on Multimedia Production (MMED-1052), Winter, on Fanshawe College.</h2>
+      </footer>
   </div>
 </body>
 </html>
